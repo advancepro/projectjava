@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeController">
+   <children>
+      <Pane prefHeight="475.0" prefWidth="182.0" style="-fx-background-color: #363940;">
+         <children>
+            <ImageView fitHeight="137.0" fitWidth="131.0" layoutX="35.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@newspaper-png-icon-25.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="8.0" layoutY="138.0" prefHeight="228.0" prefWidth="163.0">
+               <children>
+                  <Label layoutX="7.0" layoutY="14.0" text="Here you can see the news!" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="43.0" layoutY="142.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #ffffff;" text="Business" textFill="#030000">
+                     <effect>
+                        <SepiaTone />
+                     </effect>
+                  </Button>
+                  <Button layoutX="43.0" layoutY="95.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #ffffff;" text="Sports" textFill="#0d0000">
+                     <effect>
+                        <SepiaTone />
+                     </effect>
+                  </Button>
+                  <Button layoutX="43.0" layoutY="46.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" text="Technology">
+                     <effect>
+                        <SepiaTone />
+                     </effect>
+                  </Button>
+                  <Button layoutX="43.0" layoutY="188.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #ffffff;" text="Economy">
+                     <effect>
+                        <SepiaTone />
+                     </effect>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Line endX="49.0" layoutX="115.0" layoutY="131.0" startX="-100.0" />
+            <Line endX="48.0" layoutX="116.0" layoutY="380.0" startX="-100.0" />
+            <Label layoutX="51.0" layoutY="444.0" style="-fx-border-color: #FFFFFF;" text="CONTACT US" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="home" layoutX="182.0" prefHeight="475.0" prefWidth="486.0">
+         <children>
+            <Pane layoutX="20.0" layoutY="41.0" prefHeight="177.0" prefWidth="219.0">
+               <children>
+                  <Button fx:id="maruti" contentDisplay="TOP" mnemonicParsing="false" prefHeight="177.0" prefWidth="219.0" text="TECHNOLOGY" />
+                  <ImageView fitHeight="110.0" fitWidth="219.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@5408268133-bigstock-software-update-SUPERSIZE.jpg" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Pane layoutX="253.0" layoutY="41.0" prefHeight="177.0" prefWidth="219.0">
+               <children>
+                  <Button contentDisplay="TOP" mnemonicParsing="false" prefHeight="177.0" prefWidth="219.0" text="SPORT" />
+                  <ImageView fitHeight="131.0" fitWidth="219.0" layoutX="8.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@75687693-sports-news-live-on-a-background-map-of-the-world-isolated-vector-illustration-latest-news-technolog.jpg" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Pane layoutX="20.0" layoutY="238.0" prefHeight="197.0" prefWidth="219.0">
+               <children>
+                  <Button contentDisplay="TOP" layoutY="1.0" mnemonicParsing="false" prefHeight="197.0" prefWidth="219.0" text="BUSİNESS" />
+                  <ImageView fitHeight="197.0" fitWidth="219.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@business-news-chatbot.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Pane layoutX="255.0" layoutY="243.0" prefHeight="197.0" prefWidth="211.0">
+               <children>
+                  <Button contentDisplay="TOP" layoutY="-3.0" mnemonicParsing="false" prefHeight="197.0" prefWidth="219.0" text="ECONOMY" />
+                  <ImageView fitHeight="197.0" fitWidth="211.0" layoutX="1.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@news-image_57_1_en.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Separator layoutX="17.0" layoutY="32.0" prefHeight="1.0" prefWidth="455.0" />
+            <Separator layoutX="20.0" layoutY="226.0" prefHeight="3.0" prefWidth="446.0" />
+            <Separator layoutX="245.0" layoutY="35.0" orientation="VERTICAL" prefHeight="414.0" prefWidth="5.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

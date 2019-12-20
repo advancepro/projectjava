@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="parentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignUpControllers">
+   <children>
+      <TextField fx:id="username" layoutX="206.0" layoutY="71.0" prefHeight="29.0" prefWidth="167.0" promptText="Enter Username" />
+      <RadioButton fx:id="male" layoutX="143.0" layoutY="168.0" mnemonicParsing="false" selected="true" text="Male" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="genders" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="female" layoutX="260.0" layoutY="168.0" mnemonicParsing="false" text="Female" textFill="WHITE" toggleGroup="$genders" />
+      <TextField fx:id="email" layoutX="206.0" layoutY="217.0" prefHeight="29.0" prefWidth="167.0" promptText="Enter your Email" />
+      <Button fx:id="signup" layoutX="206.0" layoutY="272.0" mnemonicParsing="false" onAction="#signUp" opacity="0.83" prefHeight="29.0" prefWidth="167.0" style="-fx-background-radius: 100;" text="Sign Up">
+         <effect>
+            <Reflection />
+         </effect>
+      </Button>
+      <Button fx:id="login" layoutX="504.0" layoutY="14.0" mnemonicParsing="false" onAction="#loginAction" opacity="0.89" prefHeight="36.0" prefWidth="82.0" style="-fx-background-radius: 100;" text="Login">
+         <effect>
+            <Reflection />
+         </effect>
+      </Button>
+      <ImageView fx:id="progress" fitHeight="177.0" fitWidth="212.0" layoutX="200.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@lg.-text-entering-comment-loader.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="8.0" layoutY="2.0" prefHeight="35.0" prefWidth="392.0" style="-fx-font-family: Quicksand; -fx-font-weight: bolder; -fx-font-size: 2.0em; -fx-fill: white;" text="Technological Development News" textFill="WHITE">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" />
+         </effect>
+      </Label>
+      <RadioButton fx:id="other" layoutX="379.0" layoutY="168.0" mnemonicParsing="false" text="Other" textFill="WHITE" />
+      <PasswordField fx:id="password" layoutX="205.0" layoutY="118.0" prefHeight="29.0" prefWidth="167.0" promptText="Enter Password" />
+      <ImageView fitHeight="117.0" fitWidth="123.0" layoutX="-3.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sam.solutions_product_news_portal_inner1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

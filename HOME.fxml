@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="sample.HomeController">
+   <children>
+      <Label layoutX="14.0" layoutY="19.0" prefHeight="17.0" prefWidth="573.0" text="The Twitter account of Arron Banks, the founder of the pro-Brexit campaign Leave" />
+      <Label layoutX="14.0" layoutY="46.0" text=".EU, has been suspended after being hacked." />
+      <Label layoutX="14.0" layoutY="112.0" text="In a statement posted by the campaign's official account, Mr Banks said" />
+      <Label layoutX="14.0" layoutY="135.0" text="&quot;personal data&quot; had since been shared via Twitter." />
+      <Label layoutX="14.0" layoutY="192.0" text="He also accused the social network of failing to tackle the issue." />
+      <Label layoutX="14.0" layoutY="221.0" text="Twitter has been contacted by the BBC for comment." />
+      <ImageView fitHeight="189.0" fitWidth="185.0" layoutX="295.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@twitterdmsearch-800x789.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
